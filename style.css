@@ -8,84 +8,135 @@ body {
 	background-color: #fef9f2;
 	font-family: "Montserrat", sans-serif;
 	margin: 0;
+	/* align-items: center;
+	justify-content: center; */
+	height: 90vh;
+	overflow: hidden;
+	margin: 40px 20px 45px;
+}
+
+main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
-	overflow: hidden;
+	/* margin-left: 65rem; */
+	margin-top: 5rem;
 }
-
 .panel-container {
 	background-color: #fff;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+	border: 4px groove red;
 	border-radius: 4px;
 	font-size: 90%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
+	width: 30em;
+	height: 60em;
 	padding: 30px;
 	max-width: 700px;
-	text-align: center;
 }
 
-.panel-container strong {
+#panel-container strong {
 	line-height: 20px;
+}
+
+.panel-container p {
+	margin: 25px 0;
+	line-height: 100vh;
 }
 
 .ratings-container {
 	display: flex;
 	margin: 20px 0px;
-  
 }
 
 .rating {
-  display: grid;
-  align-items: center;
+	align-items: center;
 	flex: 1;
 	cursor: pointer;
 	padding: 20px;
-  margin: 10px 15px;
+	margin: 10px 15px;
+	filter: grayscale(1);
 }
 
-.rating:hover, .rating.active {
-  border-radius: 4px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.rating:hover,
+.rating.active {
+	border-radius: 4px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	filter: grayscale(0);
 }
 
 .rating img {
-  width: 40px;
+	width: 40px;
 }
 
 .rating small {
-  display: inline-block;
-  color: #555;
-  margin: 10px 0 0;
-  }
-
-.rating:hover small, .rating.active small{
-  color: #111;
+	display: inline-block;
+	color: #555;
+	margin: 10px 0 0;
 }
 
+.rating:hover small,
+.rating.active small {
+	color: #111;
+}
+
+form {
+	padding: 2em;
+}
+
+textarea {
+	margin-top: 1.2em;
+}
 .btn {
-  background-color: #302d2b;
-  color: #fff;
-  border: 0;
-  border-radius: 4px;
-  padding: 12px 30px;
-  cursor: pointer;
+	background-color: #302d2b;
+	color: #fff;
+	border: 0;
+	border-radius: 4px;
+	padding: 12px 30px;
+	cursor: pointer;
 }
 
 .btn:focus {
-  outline: 0;
+	outline: 0;
 }
 
 .btn:active {
-  transform: scale(0.98);
+	transform: scale(0.98);
 }
 
 .fa-heart {
-  color: red;
-  font-size: 30px;
-  margin-bottom: 10;
+	color: red;
+	font-size: 30px;
+	margin-bottom: 10;
+}
+
+footer {
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	height: 25rem;
+	margin: 40px 20px 45px;
+}
+
+#creator {
+	text-shadow: #000000 0px 3px 3.15px;
+	margin-top: 20px;
+	font-size: 0.2 em;
+}
+
+.fab {
+	margin-top: 20px;
+}
+
+/* Media */
+
+@media (min-width:320px) {
+	.panel-container {
+		padding: 1.5rem 1.5rem;
+	}
+
 }

@@ -19,9 +19,37 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	/* margin-left: 65rem; */
 	margin-top: 5rem;
 }
+
+h2 {
+	margin: 0em auto 1.5em auto;
+}
+
+#registeration {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	
+}
+
+.field-names {
+	margin: 12px auto 12px auto;
+	width: inherit;
+}
+
+#first_name, #last_name, #email {
+	height: 35px;
+	/*  */
+}
+
+#email {
+	margin: auto;
+	width:auto;
+	overflow: scroll;
+	
+}
+
 .panel-container {
 	background-color: #fff;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -34,7 +62,7 @@ main {
 	align-items: center;
 	text-align: center;
 	width: 30em;
-	height: 60em;
+	height: 70em;
 	padding: 30px;
 	max-width: 700px;
 }
@@ -84,13 +112,14 @@ main {
 	color: #111;
 }
 
-form {
-	padding: 2em;
-}
-
 textarea {
 	margin-top: 1.2em;
 }
+
+#comments {
+	margin-bottom: 35px;
+}
+
 .btn {
 	background-color: #302d2b;
 	color: #fff;
@@ -119,7 +148,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	height: 25rem;
-	margin: 40px 20px 45px;
+	margin: 100px 20px 7px;
 }
 
 #creator {
@@ -130,13 +159,22 @@ footer {
 
 .fab {
 	margin-top: 20px;
+	
 }
 
 /* Media */
 
-@media (min-width:320px) {
+@media (min-width: 320px) {
 	.panel-container {
 		padding: 1.5rem 1.5rem;
 	}
+	
+}
 
+@media only screen and (max-width: 600px) {
+	#email {
+		flex-direction: row;
+		justify-content: space-between;
+		
+	}
 }
